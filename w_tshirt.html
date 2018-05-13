@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      
+    <link rel="stylesheet" href="css/main.css">
+  <style>
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+      }
+      #men,#women{
+        width :48%;
+  
+      }
+  </style>
+  </head>
+
+    <body>
+     <div class="logo">
+            <img src="images/logo.png" alt="logo" />
+        </div>
+
+      <h1><br>Welcome to LifeSport Store!</h1>
+      <!--<h2>This is the home page</h2>-->
+
+        <div>
+        
+
+         <div id="links-div">
+             
+                 <a href = "index0.html">Home</a>
+                 <a href = "about.html">About</a>
+                 <a href = "myacct.html">My Account</a>
+                 <a href = "purchase.html">Purchase Online</a>
+             
+        </div>
+        <hr/>
+         <h2> Clothing >> Women >> T-Shirts </h2>
+         <div class="container" style="margin-top:50px">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <img src="clothing/women-tshirt.jpg" class="img-fluid"  alt="Cinque Terre" width="100" hieght="120">
+                </div>
+               <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br>
+                            <div class="row">
+                                Price : $120
+                            </div>
+                            <div class="row">
+                                Available colors : Blue, Black
+                            </div>
+                            <div class="row">
+                                Size : M, L
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- </div> -->
+                    <br>
+                    <div class="row">                    
+                      <button type="button" class="btn btn-primary btn-lg" style="text-align: center">
+                       <a href="purchase.html"> Purchase Now </a>
+                      </button>
+                    </div>
+                 </div> 
+             </div>
+        </div> 
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        
+        <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $(".Men").click(function(){
+                 $("#men").show();
+                 $("#women").hide();
+            });
+            
+            $(".Women").click(function(){
+                 $("#men").hide();
+                 $("#women").show();
+            });
+            
+            $(Image).click(function(){
+                $name = $(this).attr('src');
+                
+                $()
+            });
+        });
+        </script>        
+        
+    </body>
+
+</html>

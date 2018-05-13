@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Purchase
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body onload = "document.getElementById('signupid').style.display='block'" >
+
+<div class="logo">
+            <img src="images/logo.png" alt="logo" />
+        </div>
+
+      <h1><br>Welcome to LifeSport Store!</h1>
+    
+
+   <div id="links-div">
+             
+                 <a href = "index0.html">Home</a>
+                 <a href = "about.html">About</a>
+                 <a href = "myacc.html">My Account</a>
+                 <a href = "purchase.html">Purchase Online</a>
+             
+  </div>
+<hr/>
+  <div id="signupid" class="modal">
+ 
+  <form class="modal-content" action="Thank you.html">
+    <div class="container">
+      <h2>Purchase</h2>
+      <h3><u><p>Enter Payment Details</p></u></h3>
+	  
+	  <label for="f_name"><b>First Name</b></label>
+      <input type="text" placeholder="Ente Your First Name" name="f_name" required> <br> <br>
+	  
+	  <label for="l_name"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Your Last Name" name="l_name" required><br><br>
+	  
+	  <label for="payment-method"><b>Method of payment</b></label><br/>
+	  <input type="radio" name="payment-method" value="debit" required> Debit card<br>
+	  <input type="radio" name="payment-method" value="credit"> Credit card<br><br>
+	  
+	  <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br> <br>
+	  
+	  <label for="item"><b>Item to purchase</b></label>
+      <input type="text" placeholder="Enter Item name" name="item" required><br> <br>
+	   
+	  <label for="address"><b>Address</b></label>
+      <input type="text" placeholder="Enter Address" name="address"><br/><br>
+	  
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Subscribe to receive email updates about upcoming new promotion and arrival products.
+      </label>
+
+      
+
+      <div class="clearfix">
+        <button type="button" onclick="window.location.href='index0.html'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn" onclick= myFunction(); >Purchase</button>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+function myFunction() {
+	 var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+    }
+}
+
+</script>
+</body>
+</html>
